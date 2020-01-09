@@ -1,7 +1,7 @@
-<template>
+<template functional>
     <div class="TableBody">
         <div
-            v-for="(item, i) in items"
+            v-for="(item, i) in props.items"
             :key="`${item.id}-${i}`"
             class="row"
         >
